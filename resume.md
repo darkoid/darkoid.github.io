@@ -1,57 +1,52 @@
-Johnny Coder
+Durgesh Shah
 ============
 
 ----
 
->  In this style, the resume starts with a blockquote, where
->  you can briefly list your specialties, or include a salient
->  quote. Ending a line with a backslash forces a line break.
+>  Durgesh Shah is a cybersecurity researcher, mechanical engineer, educator and 
+>  content creator. He has gained top 1% on TryHackMe platform(alias - darkoid) 
+>  with several pathways completion certificates.
 
 ----
 
 Education
 ---------
 
-2010-2014 (expected)
-:   **PhD, Computer Science**; Awesome University (MyTown)
+Dec 2020 - Dec 2024 (expected)
+:   **Maulana Azad National Institute of Technology Bachelor of Technology, Bhopal**; BTech, 2nd Year, Mechanical Engineering
 
-    *Thesis title: Deep Learning Approaches to the Self-Awesomeness
-     Estimation Problem*
+April 2015 - May 2019
+:   **Delhi Public School, Vindhyanagar**; High School Class X and XII
 
-2007-2010
-:   **BSc, Computer Science and Electrical Engineering**; University of
-    HomeTown (HomeTown)
+SKILL
+-----
 
-    *Minor: Awesomeology*
+>   Nmap, Wireshark, Burpsuite, Hashcat, TOR, Dark Web,
+>   Cryptocurrency Security, Spiderfoot-GUI, OSINT Essentials,
+>   Python, Java, Cryptography, Autodesk Fusion360.
 
-Experience
-----------
 
-**Your Most Recent Work Experience:**
+CERTIFICATIONS
+--------------
 
-Short text containing the type of work done, results obtained,
-lessons learned and other remarks. Can also include lists and
-links:
+**TCM Security – Practical Ethical Hacking – The Complete Course (completed) TCM Security – Open-Source Intelligence Fundamentals** (completed)
 
-* First item
+**TCM Security – External Pentest Playbook** (completed)
 
-* Item with [link](http://www.example.com). Links will work both in
-  the html and pdf versions.
+**zSecurity – Dark Web, Anonymity, Privacy & Security Course (completed) REUTERS – Introduction to Digital Journalism** (completed)
 
-**That Other Job You Had**
+**Autodesk – Fusion 360 in 90 minutes** (completed)
 
-Also with a short description.
+Coursera – IBM Cybersecurity Analyst Professional Certificate (ongoing) Coursera – Privacy Fundamentals Specialization (ongoing)
 
-Technical Experience
---------------------
+PROJECTS
+--------
 
-My Cool Side Project
-:   For items which don't have a clear time ordering, a definition
-    list can be used to have named items.
-
-    * These items can also contain lists, but you need to mind the
-      indentation levels in the markdown source.
-    * Second item.
+Misinformation on Health Tips
+:   
+    * Lead a team of 6 members in spreading awareness on the misinformation spread during COVID pandemic.
+    * Designed and executed social media strategy across 1k followers on Instagram.
+    * [health.myths](instagram.com/health.myths)
 
 Open Source
 :   List open source contributions here, perhaps placing emphasis on
@@ -69,32 +64,16 @@ Programming Languages
     emphasized terms. Notice the reasonably nice page break in the pdf
     version, which wouldn't happen if we generated the pdf via html.
 
-:   **second-lang:** Description of your experience with second-lang,
-    perhaps again including a [link] [ref], this time placing the url
-    reference elsewhere in the document to reduce clutter (see source
-    file). 
+:   Basic knowledge of **C**, **Python**, **Markdown**, **Java**
 
-:   **obscure-but-impressive-lang:** We both know this one's pushing
-    it.
+ACHIEVEMENTS
+------------
 
-:   Basic knowledge of **C**, **x86 assembly**, **forth**, **Common Lisp**
-
-[ref]: https://github.com/githubuser/superlongprojectname
-
-Extra Section, Call it Whatever You Want
-----------------------------------------
-
-* Human Languages:
-
-     * English (native speaker)
-     * ???
-     * This is what a nested list looks like.
-
-* Random tidbit
-
-* Other sort of impressive-sounding thing you did
+* Top 1% on TryHackMe, a global cybersecurity lab-based practice platform
+* • Awarded “Highest in Computer Science XII” – Aug 2019 ( Delhi Public School 
+    Vindhyanagar )
 
 ----
 
-> <email@example.com> • +00 (0)00 000 0000 • XX years old\
-> address - Mytown, Mycountry
+> <durgeshshah.wdn@gmail.com>       •       +91 951 6730898         •       20 years old
+> linkedin.com/in/darkoid           •       https://www.youtube.com/channel/UCwydbSGjax5KOBLRcEbwxBA
