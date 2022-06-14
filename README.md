@@ -42,12 +42,12 @@ Coursera – IBM Cybersecurity Analyst Professional Certificate (ongoing) Course
 PROJECTS
 --------
 
-Misinformation on Health Tips [link](instagram.com/health.myths)
+Misinformation on Health Tips [link](https://www.instagram.com/health.myths)
 :   
     * Lead a team of 6 members in spreading awareness on the misinformation spread during COVID pandemic.
     * Designed and executed social media strategy across 1k followers on Instagram.
 
-Spider Man game on HTML [link](darkoid.github.io/spider-man)
+Spider Man game on HTML [link](/spider-man)
 :
 	* A practice game designed from using mit software SCRATCH.
 
