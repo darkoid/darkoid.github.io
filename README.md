@@ -1,37 +1,73 @@
-## Durgesh Shah
+Durgesh Shah
+============
 
-You can use the [editor on GitHub](https://github.com/darkoid/darkoid.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+----
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+>  Durgesh Shah is a cybersecurity researcher, mechanical engineer, educator and 
+>  content creator. He has gained top 1% on TryHackMe platform(alias - darkoid) 
+>  with several pathways completion certificates.
 
-### Markdown
+----
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Education
+---------
 
-```markdown
-Syntax highlighted code block
+Dec 2020 - Dec 2024 (expected)
+:   **Maulana Azad National Institute of Technology Bachelor of Technology, Bhopal**; BTech, 2nd Year, Mechanical Engineering
 
-# Header 1
-## Header 2
-### Header 3
+April 2015 - May 2019
+:   **Delhi Public School, Vindhyanagar**; High School Class X and XII
 
-- Bulleted
-- List
+SKILL
+-----
 
-1. Numbered
-2. List
+>   Nmap, Wireshark, Burpsuite, Hashcat, TOR, Dark Web,
+>   Cryptocurrency Security, Spiderfoot-GUI, OSINT Essentials,
+>   Python, Java, Cryptography, Autodesk Fusion360.
 
-**Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](src)
-```
+CERTIFICATIONS
+--------------
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+**TCM Security – Practical Ethical Hacking – The Complete Course (completed) TCM Security – Open-Source Intelligence Fundamentals** (completed)
 
-### Jekyll Themes
+**TCM Security – External Pentest Playbook** (completed)
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/darkoid/darkoid.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+**zSecurity – Dark Web, Anonymity, Privacy & Security Course (completed) REUTERS – Introduction to Digital Journalism** (completed)
 
-### Support or Contact
+**Autodesk – Fusion 360 in 90 minutes** (completed)
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+Coursera – IBM Cybersecurity Analyst Professional Certificate (ongoing) Coursera – Privacy Fundamentals Specialization (ongoing)
+
+PROJECTS
+--------
+
+Misinformation on Health Tips [link](instagram.com/health.myths)
+:   
+    * Lead a team of 6 members in spreading awareness on the misinformation spread during COVID pandemic.
+    * Designed and executed social media strategy across 1k followers on Instagram.
+
+Spider Man game on HTML [link](darkoid.github.io/spider-man)
+:
+	* A practice game designed from using mit software SCRATCH.
+
+Open Source
+:   List open source contributions here, perhaps placing emphasis on
+    the project names, for example the **Linux Kernel**, where you
+    implemented multithreading over a long weekend, or **node.js**
+    (with [link](http://nodejs.org)) which was actually totally
+    your idea...
+
+:   Basic knowledge of **C**, **Python**, **Markdown**, **Java**
+
+ACHIEVEMENTS
+------------
+
+* Top 1% on TryHackMe, a global cybersecurity lab-based practice platform
+* • Awarded “Highest in Computer Science XII” – Aug 2019 ( Delhi Public School 
+    Vindhyanagar )
+
+----
+
+> <durgeshshah.wdn@gmail.com>       •       +91 951 6730898         •       20 years old
+> linkedin.com/in/darkoid           •       https://www.youtube.com/channel/UCwydbSGjax5KOBLRcEbwxBA
