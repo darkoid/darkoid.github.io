@@ -28,7 +28,7 @@ SKILL
 
 CERTIFICATIONS
 --------------
-*None at the moment. Too costly man, hopefully someday!
+*None at the moment. Too costly man, hopefully someday!*
 
 CERTIFICATIONS OF COMPLETION
 ----------------------------
