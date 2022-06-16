@@ -28,6 +28,10 @@ SKILL
 
 CERTIFICATIONS
 --------------
+*None at the moment. Too costly man, hopefully someday!
+
+CERTIFICATIONS OF COMPLETION
+----------------------------
 
 **TCM Security – Practical Ethical Hacking – The Complete Course (completed) TCM Security – Open-Source Intelligence Fundamentals** (completed)
 
