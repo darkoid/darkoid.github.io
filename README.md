@@ -2,7 +2,9 @@ DURGESH SHAH
 ============
 
 >   <durgeshshah.wdn@gmail.com>       •       +91 951 6730898         •       20 years old
+
 >   [Linkedin](linkedin.com/in/darkoid)           •       [Youtube](youtube.com/channel/UCwydbSGjax5KOBLRcEbwxBA)
+
 >   [My Website (in development)](sites.google.com/view/darkoid/)
 
 ----
