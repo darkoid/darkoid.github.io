@@ -3,9 +3,9 @@ DURGESH SHAH
 
 >   <durgeshshah.wdn@gmail.com>       •       +91 951 6730898         •       20 years old
 
->   [Linkedin](linkedin.com/in/darkoid)           •       [Youtube](youtube.com/channel/UCwydbSGjax5KOBLRcEbwxBA)
+>   [Linkedin](https://linkedin.com/in/darkoid)           •       [Youtube](https://youtube.com/channel/UCwydbSGjax5KOBLRcEbwxBA)
 
->   [My Website (in development)](sites.google.com/view/darkoid/)
+>   [My Website (in development)](https://sites.google.com/view/darkoid/)
 
 ----
 
@@ -54,7 +54,7 @@ PROJECTS
     * Made 2 games: Warzone and Catch-the-ball.
     * 
 
-**Awareness on Health Tip Myths via Social Media** [link](instagram.com/health.myths)
+**Awareness on Health Tip Myths via Social Media** [link](https://instagram.com/health.myths)
 :   
     * Lead a team of 6 people in spreading awareness during COVID pandemic as an NSS project.
     * Gained more than 1k followers on Instagram.
