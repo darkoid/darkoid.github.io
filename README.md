@@ -46,23 +46,21 @@ Coursera – IBM Cybersecurity Analyst Professional Certificate (ongoing) Course
 PROJECTS
 --------
 
+Powershell Notes [link](https://p0w3r.notion.site/Main-852bac6591db43a7afa212aaa22ed26a)
+:
+	* What actually is Powershell?
+	* Alias Commands, Emuneration Commands Table
+	* Notes on Some Powershell Scripts I made.
+	* Execution Policy, Logging, Powercat, PowerView and Nishang.
+
 Misinformation on Health Tips [link](https://www.instagram.com/health.myths)
 :   
-    * Lead a team of 6 members in spreading awareness on the misinformation spread during COVID pandemic.
-    * Designed and executed social media strategy across 1k followers on Instagram.
+	* Lead a team of 6 members in spreading awareness on the misinformation spread during COVID pandemic.
+	* Designed and executed social media strategy across 1k followers on Instagram.
 
 Spider Man game on HTML [link](/spider-man)
 :
 	* A practice game designed from using mit software SCRATCH.
-
-Open Source
-:   List open source contributions here, perhaps placing emphasis on
-    the project names, for example the **Linux Kernel**, where you
-    implemented multithreading over a long weekend, or **node.js**
-    (with [link](http://nodejs.org)) which was actually totally
-    your idea...
-
-:   Basic knowledge of **C**, **Python**, **Markdown**, **Java**
 
 ACHIEVEMENTS
 ------------
