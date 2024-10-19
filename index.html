@@ -6,6 +6,13 @@
     <title>Durgesh Shah - Security Engineer</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
+        @font-face {
+            font-family: 'sp4'; /* Name of the font */
+            src: url('sp4.otf') format('woff'); /* Path to the .otf file */
+            font-weight: normal; /* or bold */
+            font-style: normal; /* or italic */
+        }
+
         body {
             background: linear-gradient(135deg, #2c3e50, #3498db, #1abc9c);
             font-family: 'Roboto', sans-serif;
@@ -42,7 +49,7 @@
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
         }
         a:hover {
-            transform: scale(1.05);
+            transform: scale(1.1);
             background: rgba(26, 188, 156, 0.9); /* Soft green on hover */
             box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
         }
@@ -72,21 +79,85 @@
             box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
         }
         #toggle {
-            margin: 20px;
+            margin: 10px;
             padding: 10px 20px;
-            font-size: 1.2em;
+            font-size: 1em;
             border: none;
-            border-radius: 5px;
+            border-radius: 2px;
             cursor: pointer;
-            background-color: #2ecc71; /* Green for toggle */
             color: black;
             transition: background 0.3s, box-shadow 0.3s;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
         }
         #toggle:hover {
-            background-color: #27ae60; /* Darker green on hover */
+            background-color: #FBFBF9; /* Darker green on hover */
             box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
         }
+        
+        /* New Tiles Styles */
+        .social-tile {
+            display: inline-block;
+            margin: 10px;
+            padding: 15px 25px;
+            border-radius: 10px;
+            transition: transform 0.2s, background 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Dark Mode Styles */
+        .linkedin {
+            background: rgba(52, 152, 219, 0.9); /* Soft Blue */
+            color: white;
+            font-family: 'Myriad', sans-serif;
+        }
+
+        .github {
+            background: #27292B;
+            color: #FBFCFA;
+            font-family: 'Helvetica Neue', sans-serif;
+        }
+
+        .youtube {
+            background: darkred;
+            color: white;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .x {
+            background: #131313;
+            color: #FFFEFC;
+            font-family: 'sp4', sans-serif;
+        }
+
+        /* Light Mode Styles */
+        body.light-mode a {
+            color: #34495e;
+        }
+
+        body.light-mode .linkedin {
+            background: rgba(52, 152, 219, 0.9);
+            color: black;
+            font-family: 'Myriad', sans-serif;
+        }
+
+        body.light-mode .github {
+            background: #151922;
+            color: #FBFBF9;
+            font-family: 'Helvetica Neue', sans-serif;
+        }
+
+        body.light-mode .youtube {
+            background: darkred;
+            color: black;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body.light-mode .x {
+            background: #292929;
+            color: #FBFCF8;
+            font-family: 'sp4', sans-serif;
+        }
+        
         /* Light mode styles */
         body.light-mode {
             background: linear-gradient(135deg, #ecf0f1, #bdc3c7); /* Light gradient */
@@ -117,9 +188,12 @@
 <body>
     <h1>Durgesh Shah</h1>
     <h2>Security Engineer</h2>
-    <p>Welcome to my professional portfolio!</p>
-    <p>Connect with me on LinkedIn: 
-        <a href="https://www.linkedin.com/in/darkoid/" target="_blank">LinkedIn</a>
+    <p>InfoSec Enthusiast 💻 | Hacking for a Secure World 🛡</p>
+    <p>Connect with me on: 
+        <a href="https://www.linkedin.com/in/darkoid/" class="social-tile linkedin" target="_blank">LinkedIn</a>
+        <a href="https://github.com/darkoid" class="social-tile github" target="_blank">GitHub</a>
+        <a href="https://x.com/DurgeshShah16" class="social-tile x" target="_blank">X</a>
+        <a href="https://www.youtube.com/@darkoiddefense" class="social-tile youtube" target="_blank">YouTube</a>
     </p>
     
     <button id="toggle">Switch to Light Mode</button>
