@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comic Reader</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: 10px 0;
+        }
+        #comic-container {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+        }
+        input[type="file"] {
+            margin: 10px 0;
+        }
+        label {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Comic Reader</h1>
+    
+    <!-- 10 input fields for different folder selections -->
+    <div id="upload-section">
+        <div>
+            <label>1st Folder:</label>
+            <input type="file" id="folderInput1" webkitdirectory multiple />
+        </div>
+        <div>
+            <label>2nd Folder:</label>
+            <input type="file" id="folderInput2" webkitdirectory multiple />
+        </div>
+        <div>
+            <label>3rd Folder:</label>
+            <input type="file" id="folderInput3" webkitdirectory multiple />
+        </div>
+        <div>
+            <label>4th Folder:</label>
+            <input type="file" id="folderInput4" webkitdirectory multiple />
+        </div>
+        <div>
+            <label>5th Folder:</label>
+            <input type="file" id="folderInput5" webkitdirectory multiple />
+        </div>
+        <div>
+            <label>6th Folder:</label>
+            <input type="file" id="folderInput6" webkitdirectory multiple />
+        </div>
+        <div>
+            <label>7th Folder:</label>
+            <input type="file" id="folderInput7" webkitdirectory multiple />
+        </div>
+        <div>
+            <label>8th Folder:</label>
+            <input type="file" id="folderInput8" webkitdirectory multiple />
+        </div>
+        <div>
+            <label>9th Folder:</label>
+            <input type="file" id="folderInput9" webkitdirectory multiple />
+        </div>
+        <div>
+            <label>10th Folder:</label>
+            <input type="file" id="folderInput10" webkitdirectory multiple />
+        </div>
+    </div>
+
+    <button id="processButton">Process Selected Folders</button>
+    <div id="comic-container"></div>
+
+    <script>
+        document.getElementById('processButton').addEventListener('click', handleFiles);
+
+        function handleFiles() {
+            const folderInputs = [];
+            for (let i = 1; i <= 10; i++) {
+                const folderInput = document.getElementById('folderInput' + i);
+                if (folderInput.files.length > 0) {
+                    folderInputs.push({
+                        sequence: i, // Capture the sequence number
+                        files: Array.from(folderInput.files)
+                    });
+                }
+            }
+
+            // Ensure folders are processed in the order of upload
+            folderInputs.sort((a, b) => a.sequence - b.sequence);
+
+            const comicContainer = document.getElementById('comic-container');
+            comicContainer.innerHTML = '';
+
+            folderInputs.forEach(input => {
+                const folderMap = {};
+
+                input.files.forEach(file => {
+                    const folder = file.webkitRelativePath.split('/')[0];
+                    if (!folderMap[folder]) {
+                        folderMap[folder] = [];
+                    }
+                    if (/\.(jpg|jpeg|png|gif)$/i.test(file.name)) {
+                        folderMap[folder].push(file);
+                    }
+                });
+
+                // Process folders in the order they were uploaded
+                Object.keys(folderMap).forEach(folder => {
+                    const images = folderMap[folder];
+
+                    // Sort images by numeric parts of the filename
+                    images.sort((a, b) => extractNumber(a.name) - extractNumber(b.name));
+
+                    const folderHeader = document.createElement('h2');
+                    folderHeader.textContent = folder;
+                    comicContainer.appendChild(folderHeader);
+
+                    images.forEach(file => {
+                        const img = document.createElement('img');
+                        img.src = URL.createObjectURL(file);
+                        img.style.width = '100%';
+                        comicContainer.appendChild(img);
+                    });
+                });
+            });
+
+            comicContainer.style.display = 'flex';
+        }
+
+        // Function to extract numeric parts from filenames
+        function extractNumber(filename) {
+            // Extract numbers from the filename (removes leading zeroes)
+            const numMatch = filename.match(/\d+/); // Looks for the first sequence of digits in the filename
+            return numMatch ? parseInt(numMatch[0], 10) : 0;
+        }
+    </script>
+</body>
+</html>
