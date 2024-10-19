@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Durgesh Shah - Security Engineer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #2c3e50, #3498db, #1abc9c); /* Professional gradient */
+            font-family: 'Roboto', sans-serif;
+            color: #ecf0f1;
+            text-align: center;
+            padding: 20px;
+            transition: background 0.5s, color 0.5s;
+            position: relative;
+            overflow: hidden;
+        }
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 3em;
+            margin: 0;
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+        }
+        h2 {
+            font-size: 1.5em;
+            margin: 10px 0;
+            color: #ffcc00; /* Default color for visibility */
+        }
+        a {
+            display: inline-block;
+            margin: 10px;
+            padding: 15px 25px;
+            font-size: 1.2em;
+            color: #ffffff;
+            background: rgba(52, 152, 219, 0.9); /* Soft blue */
+            border-radius: 10px;
+            text-decoration: none;
+            transition: transform 0.2s, background 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        a:hover {
+            transform: scale(1.05);
+            background: rgba(26, 188, 156, 0.9); /* Soft green on hover */
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+        }
+        .subpages {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+            position: relative;
+            z-index: 1; /* Ensure subpages are above the matrix */
+        }
+        .subpage {
+            background: rgba(255, 255, 255, 0.1);
+            margin: 10px;
+            border-radius: 10px;
+            padding: 20px;
+            width: 220px;
+            transition: transform 0.2s, background 0.5s;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        .subpage h2 {
+            color: #86c001; /* Updated green for subpage titles */
+        }
+        .subpage:hover {
+            transform: scale(1.05);
+            background: rgba(255, 255, 255, 0.2);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+        }
+        #toggle {
+            margin: 20px;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #2ecc71; /* Green for toggle */
+            color: black;
+            transition: background 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        #toggle:hover {
+            background-color: #27ae60; /* Darker green on hover */
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+        }
+        /* Light mode styles */
+        body.light-mode {
+            background: linear-gradient(135deg, #ecf0f1, #bdc3c7); /* Light gradient */
+            color: #34495e; /* Darker text color for light mode */
+        }
+        body.light-mode h2 {
+            color: #80896F; /* Light mode color for titles */
+        }
+        body.light-mode a {
+            background: rgba(52, 152, 219, 0.9);
+            color: #34495e; /* Dark text for visibility */
+        }
+        body.light-mode a:hover {
+            background: rgba(26, 188, 156, 0.9);
+        }
+        body.light-mode .subpage {
+            background: rgba(255, 255, 255, 0.9); /* Lighter background for subpages */
+            color: #34495e; /* Dark text for visibility */
+        }
+        body.light-mode .subpage h2 {
+            color: #86c001; /* Updated light mode title color */
+        }
+        body.light-mode .subpage:hover {
+            background: rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <h1>Durgesh Shah</h1>
+    <h2>Security Engineer</h2>
+    <p>Welcome to my professional portfolio!</p>
+    <p>Connect with me on LinkedIn: 
+        <a href="https://www.linkedin.com/in/darkoid/" target="_blank">LinkedIn</a>
+    </p>
+    
+    <button id="toggle">Switch to Light Mode</button>
+
+    <div class="subpages">
+        <div class="subpage">
+            <h2>ComicReader</h2>
+            <p>Upload your comic book chapters (JPEG, JPG, PNG only).</p>
+            <a href="/ComicReader/index.html">Visit</a>
+        </div>
+        <div class="subpage">
+            <h2>Firm</h2>
+            <p>An unfinished website for my father's law practice.</p>
+            <a href="/Firm/index.html">Visit</a>
+        </div>
+        <div class="subpage">
+            <h2>Bacon</h2>
+            <p>A sample practice website about bacon (I don't even eat it).</p>
+            <a href="/bacon/index.html">Visit</a>
+        </div>
+        <div class="subpage">
+            <h2>CV</h2>
+            <p>My CV made with only HTML.</p>
+            <a href="/cv/index.html">Visit</a>
+        </div>
+        <div class="subpage">
+            <h2>CV2</h2>
+            <p>My CV with HTML, JS, and CSS.</p>
+            <a href="/cv2/index.html">Visit</a>
+        </div>
+    </div>
+
+    <script>
+        const toggleButton = document.getElementById('toggle');
+        const body = document.body;
+
+        toggleButton.addEventListener('click', () => {
+            body.classList.toggle('light-mode');
+            toggleButton.textContent = body.classList.contains('light-mode') ? 'Switch to Dark Mode' : 'Switch to Light Mode';
+        });
+    </script>
+</body>
+</html>
