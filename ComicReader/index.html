@@ -11,23 +11,71 @@
             align-items: center;
             margin: 0;
             padding: 20px;
-            background-color: #f0f0f0;
+            background: linear-gradient(to bottom right, #ffcc00, #ff6699);
+            font-family: 'Comic Sans MS', cursive, sans-serif;
         }
+
+        h1 {
+            color: #ffffff;
+            text-shadow: 2px 2px 4px #000000;
+        }
+
         img {
             max-width: 100%;
             height: auto;
             margin: 10px 0;
+            border: 5px solid #ff6699;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
         }
+
+        #upload-section {
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            margin-bottom: 20px;
+        }
+
+        input[type="file"] {
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+            border: 2px solid #ff6699;
+            background-color: #ffffff;
+        }
+
+        label {
+            margin-right: 10px;
+            font-weight: bold;
+            color: #ff6699;
+        }
+
+        button {
+            background-color: #ff6699;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #ff3385;
+        }
+
         #comic-container {
             display: none;
             flex-direction: column;
             align-items: center;
+            margin-top: 20px;
         }
-        input[type="file"] {
-            margin: 10px 0;
-        }
-        label {
-            margin-right: 10px;
+
+        h2 {
+            color: #ffcc00;
+            text-shadow: 1px 1px 3px #000000;
         }
     </style>
 </head>
@@ -35,7 +83,6 @@
 
     <h1>Comic Reader</h1>
     
-    <!-- 10 input fields for different folder selections -->
     <div id="upload-section">
         <div>
             <label>1st Folder:</label>
@@ -91,13 +138,12 @@
                 const folderInput = document.getElementById('folderInput' + i);
                 if (folderInput.files.length > 0) {
                     folderInputs.push({
-                        sequence: i, // Capture the sequence number
+                        sequence: i,
                         files: Array.from(folderInput.files)
                     });
                 }
             }
 
-            // Ensure folders are processed in the order of upload
             folderInputs.sort((a, b) => a.sequence - b.sequence);
 
             const comicContainer = document.getElementById('comic-container');
@@ -116,11 +162,8 @@
                     }
                 });
 
-                // Process folders in the order they were uploaded
                 Object.keys(folderMap).forEach(folder => {
                     const images = folderMap[folder];
-
-                    // Sort images by numeric parts of the filename
                     images.sort((a, b) => extractNumber(a.name) - extractNumber(b.name));
 
                     const folderHeader = document.createElement('h2');
@@ -130,7 +173,6 @@
                     images.forEach(file => {
                         const img = document.createElement('img');
                         img.src = URL.createObjectURL(file);
-                        img.style.width = '100%';
                         comicContainer.appendChild(img);
                     });
                 });
@@ -139,10 +181,8 @@
             comicContainer.style.display = 'flex';
         }
 
-        // Function to extract numeric parts from filenames
         function extractNumber(filename) {
-            // Extract numbers from the filename (removes leading zeroes)
-            const numMatch = filename.match(/\d+/); // Looks for the first sequence of digits in the filename
+            const numMatch = filename.match(/\d+/);
             return numMatch ? parseInt(numMatch[0], 10) : 0;
         }
     </script>
